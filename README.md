@@ -1,2 +1,6 @@
 # cerebro-test-react
-Тестовое задание на практику
+
+```bash
+  npm install
+  npm run dev
+```

@@ -1,0 +1,28 @@
+.post {
+    /* border: 2px solid whitesmoke; */
+    border-radius: 10px;
+    padding: 1rem;
+    color: whitesmoke;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.post__header {
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.post__user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.post__user-avatar {
+    width: 3rem;
+}
