@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import FeedComponent from "./components/Feed";
+import Feed from "./components/Feed";
 import { PostProps } from "./components/Post";
 import User from "./types/User";
 import Post from "./types/Post";
 
+const endpoint = "https://jsonplaceholder.typicode.com/";
+
 function App() {
   const [postProps, setPostProps] = useState<PostProps[]>([]);
-
-  const endpoint = "https://jsonplaceholder.typicode.com/";
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,7 +38,7 @@ function App() {
 
   return (
     <>
-      <FeedComponent posts={postProps} />
+      <Feed posts={postProps} />
     </>
   );
 }

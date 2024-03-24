@@ -5,8 +5,8 @@ interface FeedProps {
   posts: PostProps[];
 }
 
-const FeedComponent = ({ posts }: FeedProps) => {
+const Feed = ({ posts }: FeedProps) => {
   return <div className="feed">{posts.map(Post)}</div>;
 };
 
-export default FeedComponent;
+export default Feed;
